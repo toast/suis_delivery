@@ -1,4 +1,8 @@
 SuisDeliveryMechRails::Application.routes.draw do
+  resources :bricks
+  get "bricks/index"
+  post "bricks/generate"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,13 @@
+<h1>SUIS Bricks</h1>
+
+<%= form_tag "/bricks/generate" do %>
+  <%= label_tag 'Base' %>
+  <%= check_box_tag 'Base', 'yes', true, :disabled => true %>
+  <%= label_tag 'Wrapper' %>
+  <%= check_box_tag 'Wrapper', 'yes', true, :disabled => true %>
+  <%= label_tag 'Buttons' %>
+  <%= check_box_tag 'Buttons', 'yes', true %>
+  <%= label_tag 'Boxes' %>
+  <%= check_box_tag 'Boxes', 'yes', true %>
+  <%= submit_tag "Generate" %>
+<% end %>
