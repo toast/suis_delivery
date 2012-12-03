@@ -54,16 +54,14 @@ module SuisDeliveryMechRails
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
-    config.assets.enabled = true
+    #config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    
-    # NICK, from: http://excid3.com/blog/heroku-actionviewtemplateerror-css-isnt-precompiled/
-    # Don't fallback to assets pipeline if a precompiled asset is missed
-    #config.assets.precompile = false
+    # Turned OFF the asset pipeline to allow css to be compiled on the fly for heroku.
     config.assets.enabled = false
     #config.assets.precompile += %w( *.js *.css )
+    #config.assets.precompile = false
   end
 end
