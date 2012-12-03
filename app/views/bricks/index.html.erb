@@ -2,12 +2,18 @@
 
 <%= form_tag "/bricks/generate" do %>
   <%= label_tag 'Base' %>
-  <%= check_box_tag 'Base', 'yes', true, :disabled => true %>
+  <%= check_box_tag 'base', 'yes', true, :disabled => true %>
+  <br>
   <%= label_tag 'Wrapper' %>
-  <%= check_box_tag 'Wrapper', 'yes', true, :disabled => true %>
+  <%= check_box_tag 'wrapper', 'yes', true, :disabled => true %>
+  <br>
   <%= label_tag 'Buttons' %>
-  <%= check_box_tag 'Buttons', 'yes', true %>
+  <%= check_box_tag 'buttons', 'yes', true %>
+  <br>
   <%= label_tag 'Boxes' %>
-  <%= check_box_tag 'Boxes', 'yes', true %>
+  <%= check_box_tag 'boxes', 'yes', true %>
+  <br>
   <%= submit_tag "Generate" %>
 <% end %>
+
+<div class="box"></div>
