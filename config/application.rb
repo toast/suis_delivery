@@ -62,8 +62,8 @@ module SuisDeliveryMechRails
     
     # NICK, from: http://excid3.com/blog/heroku-actionviewtemplateerror-css-isnt-precompiled/
     # Don't fallback to assets pipeline if a precompiled asset is missed
-    #config.assets.compile = true
+    config.assets.precompile = false
     
-    config.assets.precompile += %w( *.js *.css )
+    #config.assets.precompile += %w( *.js *.css )
   end
 end
