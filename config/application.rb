@@ -59,6 +59,7 @@ module SuisDeliveryMechRails
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+
     # Turned OFF the asset pipeline to allow css to be compiled on the fly for heroku.
     config.assets.enabled = false
     #config.assets.precompile += %w( *.js *.css )
