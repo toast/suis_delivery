@@ -59,6 +59,11 @@ module SuisDeliveryMechRails
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.assets.precompile += %w( *.js *.css )
+    
+    # NICK, from: http://excid3.com/blog/heroku-actionviewtemplateerror-css-isnt-precompiled/
+    # Don't fallback to assets pipeline if a precompiled asset is missed
+    config.assets.compile = true
+
+    #config.assets.precompile += %w( *.js *.css )
   end
 end
